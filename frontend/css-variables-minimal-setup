@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #fba101;
+  --primary-foreground: #121212;
+  --background: #ffffff;
+  --card: #fafafa;
+  --accent: #e8e8e8;
+  --muted: #eeeeee;
+  --border: #ebebeb;
+}
+
+.dark {
+  --primary: #fba101;
+  --primary-foreground: #121212;
+  --background: #070707;
+  --card: #0f0f0f;
+  --accent: #222222;
+  --muted: #222222;
+  --border: #222222;
+}
+
+@theme inline {
+  --color-primary: #fba101;
+  --color-primary-foreground: #121212;
+  --color-background: #ffffff;
+  --color-card: #fafafa;
+  --color-accent: #e8e8e8;
+  --color-muted: #eeeeee;
+  --color-border: #ebebeb;
+}
