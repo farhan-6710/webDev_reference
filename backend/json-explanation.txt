@@ -1,0 +1,14 @@
+JSON
+
+JSON (JavaScript Object Notation) is a lightweight data format used to exchange data between systems. 
+It’s text-based, language-independent, and represents data using key–value pairs (objects) and lists (arrays).
+
+.json() in Server side (Express)
+
+res.json(data) takes a JavaScript value (object, array, etc.), converts it into JSON text,
+sets the response header to Content-Type: application/json, and sends it to the client over HTTP.
+
+.json() in Client side (fetch Response)
+
+res.json() on the client reads the JSON text received from the server, parses it into a JavaScript value,
+and returns a promise that resolves with that parsed data.
