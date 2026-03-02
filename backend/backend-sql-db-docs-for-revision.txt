@@ -1,0 +1,19 @@
+Database (DB)
+A database is a system used to store and organize data so applications can safely create, read, update, and delete it. It ensures data is structured, consistent, and efficiently accessible.
+
+PostgreSQL
+PostgreSQL is an open-source relational database management system (RDBMS). It stores data in tables with relationships and uses SQL to manage, query, and maintain that data efficiently.
+
+Think of PostgreSQL as software that runs and manages your database — handling storage, querying, indexing, and data integrity.
+
+MySQL
+MySQL is another open-source relational database management system. Like PostgreSQL, it stores structured data in tables and uses SQL, but it’s often preferred for simpler, read-heavy applications.
+
+Hosting (AWS, etc.)
+PostgreSQL or MySQL are database servers that need to run somewhere — typically hosted on platforms like AWS, GCP, or your own machine. Hosting simply means running the database software on a server so apps can connect to it.
+
+pgAdmin
+pgAdmin (PostgreSQL Administration) is a GUI tool for PostgreSQL. It lets you visually manage databases, run SQL queries, inspect tables, and monitor activity instead of using only the command line.
+
+Docker
+Docker is a tool that runs applications inside containers. Containers package software (like PostgreSQL) with everything it needs, so it runs consistently across environments without manual setup.
