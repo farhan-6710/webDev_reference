@@ -1,23 +1,39 @@
-# Project Setup with Shadcn UI
+# Shadcn UI Setup with Vite + React + TypeScript
 
-This guide outlines the steps to set up your project with Shadcn UI, including Tailwind CSS integration and path aliases.
+This guide walks through setting up **Shadcn UI** with:
 
-1. Install Dependencies
+* Vite
+* React
+* TypeScript
+* Tailwind CSS v4
+* Path aliases (`@/*`)
+
+---
+
+# 1. Install Dependencies
 
 ```bash
 bun add tailwindcss @tailwindcss/vite
 bun add -D @types/node
+```
 
-2. Update src/index.css
+---
 
-code
-CSS
+# 2. Configure Tailwind CSS
+
+Update `src/index.css`:
+
+```css
 @import "tailwindcss";
+```
 
-3. Update tsconfig.json
+---
 
-code
-JSON
+# 3. Configure Path Aliases
+
+Update `tsconfig.json`:
+
+```json
 {
   "files": [],
   "references": [
@@ -31,11 +47,13 @@ JSON
     }
   }
 }
+```
 
-4. Update tsconfig.app.json
+---
 
-code
-JSON
+# 4. Update `tsconfig.app.json`
+
+```json
 {
   "compilerOptions": {
     "baseUrl": ".",
@@ -44,11 +62,15 @@ JSON
     }
   }
 }
+```
 
-5. Update vite.config.ts
+---
 
-code
-TypeScript
+# 5. Configure Vite
+
+Update `vite.config.ts`:
+
+```ts
 import path from "path"
 import tailwindcss from "@tailwindcss/vite"
 import react from "@vitejs/plugin-react"
@@ -62,17 +84,41 @@ export default defineConfig({
     },
   },
 })
+```
 
-6. Initialize Shadcn UI
+---
 
-After completing the above steps, run the Shadcn UI initialization command:
-code
-Bash
+# 6. Initialize Shadcn UI
+
+Run the initialization command:
+
+```bash
 bunx --bun shadcn@latest init
+```
 
-7. Add Components
+---
 
-Once Shadcn UI is set up, you can start adding components, for example:
-code
-Bash
+# 7. Add Components
+
+Example:
+
+```bash
 bunx --bun shadcn@latest add button
+```
+
+---
+
+# Notes
+
+* This setup uses **Tailwind CSS v4**.
+* The `@/*` alias allows cleaner imports:
+
+```ts
+import Button from "@/components/Button"
+```
+
+Instead of:
+
+```ts
+import Button from "../../components/Button"
+```
