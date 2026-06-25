@@ -94,6 +94,8 @@ Run the initialization command:
 
 ```bash
 bunx --bun shadcn@latest init
+or
+bunx --bun shadcn@latest init --preset b4VkddTAPa
 ```
 
 ---
