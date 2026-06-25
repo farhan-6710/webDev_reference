@@ -1,5 +1,0 @@
-In React (with useState): The input field is controlled by React's state. The value displayed in the input is tied to the name state, which gets updated when the user types.
-
-if its not tied then the display text might be as per the users typing but still no change in the value prop because react never know about the change until theres a state variable which updates the react that there is a change in state,
-
-so therefore we use e.target.value to get hold of the users typed input and then we use useState to notify the state update to react then react updates the virtual dom and then react-dom communicates with the browser to re render the component as there is state change

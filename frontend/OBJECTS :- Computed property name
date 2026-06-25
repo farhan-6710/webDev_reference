@@ -1,5 +1,0 @@
-An object literal in JavaScript refers to a way of directly defining an object using curly braces, where you specify key-value pairs. For example, when we say object literal, we mean the full structure written using {} to represent the object itself.
-
-A string literal is any value written directly in quotes, like "hello" or 'world'. It represents fixed text written directly in the code, not coming from a variable or expression.
-
-In JSX, we use {} to write JavaScript expressions inside JSX tags. This lets us embed variables, functions, or expressions directly within the JSX structure. Similarly, in JavaScript, when defining object literals, we use [] to evaluate expressions for object keys. This allows us to compute or dynamically assign keys while constructing the object.
